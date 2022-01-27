@@ -1,7 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 html,
 body {
   font-size: 62.5%;
-  box-sizing: border-box;
+
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
@@ -53,6 +63,10 @@ img {
 .header__inst {
   display: flex;
   align-items: center;
+}
+
+.header_telephone-text span:nth-child(1) {
+  margin-right: 1.2rem;
 }
 .header__inst span {
   line-height: 100%;
@@ -198,6 +212,80 @@ img {
   color: #767676;
 }
 
+.review {
+  background: linear-gradient(94.31deg, #c791ad -0.03%, #a2a9ce 100.01%);
+}
+
+.review__slides {
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+}
+
+.review__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 25rem;
+  padding: 6.3rem 4.5rem 5rem 4.5rem;
+  background: #ffffff;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.9rem;
+}
+.review__slide-photo {
+  clip-path: polygon(52% 3%, 99% 31%, 99% 71%, 52% 99%, 3% 70%, 3% 33%);
+  width: 10.5rem;
+  height: 12.5rem;
+  background-color: #fff;
+}
+.review__slide-photo img {
+  object-fit: cover;
+}
+
+.review__slide-text {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 117%;
+  text-align: center;
+  position: relative;
+}
+.review__slide-text::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  width: 13rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #b90160 -0.03%, #3d5bf5 100.01%);
+}
+
+.review__slide-name {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 115%;
+  text-align: center;
+
+  color: #8e8e8e;
+}
+
+.review__slide-img {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, 45%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+  width: 10.9rem;
+  height: 12.9rem;
+  background: linear-gradient(180deg, #3d5bf5 -0.03%, #b90160 100.01%);
+  /* border-radius: 0.9rem; */
+}
+
 .footer {
   position: relative;
 }
@@ -251,4 +339,12 @@ img {
   left: 77%;
   top: 47%;
   transform: translate(-50%, -50%);
+}
+
+.footer__address-list {
+  max-width: 22.4rem;
+}
+
+.footer__address-list .footer__item:not(:last-child) {
+  margin-bottom: 2rem;
 }
