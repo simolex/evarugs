@@ -362,6 +362,7 @@ img {
   backdrop-filter: blur(4rem);
   padding: 3rem 0;
   z-index: 99;
+  display: none;
 }
 
 .modal__inner {
@@ -441,4 +442,22 @@ img {
   font-size: 20px;
   line-height: 23px;
   padding: 1rem 3rem;
+}
+
+.modal__policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 115%;
+}
+.modal__policy input {
+  margin-right: 2rem;
+}
+.modal__policy a {
+  text-decoration: none;
+}
+
+.active {
+  display: flex;
 }
