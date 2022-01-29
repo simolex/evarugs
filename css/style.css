@@ -381,8 +381,8 @@ img {
 }
 .modal__inner-header {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 117%;
   margin-bottom: 3rem;
 }
 .modal__inner-elements {
@@ -439,8 +439,8 @@ img {
 .modal__button {
   max-width: 17rem;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 2rem;
+  line-height: 115%;
   padding: 1rem 3rem;
 }
 
